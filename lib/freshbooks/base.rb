@@ -118,7 +118,7 @@ module FreshBooks
           end
         when "getPDF"
           define_class_method(method_name) do |object_id|
-            api_get_action(api_action_name, object_id)
+            api_get_action('getPDF', object_id)
           end
         else
           define_method(method_name) do
